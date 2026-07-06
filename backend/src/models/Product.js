@@ -30,6 +30,7 @@ const productSchema = new mongoose.Schema({
         default:'PENDING'
     }
     
+    
 });
 
 module.exports = mongoose.model('Product', productSchema);
