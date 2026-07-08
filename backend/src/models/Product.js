@@ -10,7 +10,7 @@ const productSchema = new mongoose.Schema({
     },
     variantes:[
 
-     {  nom: {
+     {  name: {
             type: String,
             required: true
         },
@@ -28,9 +28,22 @@ const productSchema = new mongoose.Schema({
         type: String ,
         enum: ['PENDING','APPROVED','REJECTED'],
         default:'PENDING'
+    },
+   artisan: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'User',
+    required: true
+},
+images:[
+    {
+        type:String
     }
-    
-    
+],
+
+},
+{
+    timestamps:true
 });
+
 
 module.exports = mongoose.model('Product', productSchema);
