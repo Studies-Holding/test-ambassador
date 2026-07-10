@@ -1,0 +1,22 @@
+.flex-grow-1 {
+    height: 8px;
+}
+.backgroundHero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../..eee/images/montagne.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.10;
+    z-index: 0;
+}
+.bandeVerte {
+    background-color: #5db35d;
+}
+.mesBoutons {
+    position: relative;
+    z-index: 2;
+}
