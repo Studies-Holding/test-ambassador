@@ -1,0 +1,87 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Miel de Forêt de Dschang",
+      "artisan": "KAMGA Gérôme",
+      "price": 4500,
+      "priceLabel": "4 500 FCFA",
+      "emoji": "🍯",
+      "category": "Miel",
+      "description": "Miel pur de la forêt de Dschang, récolté par les apiculteurs locaux.",
+      "inStock": true
+    },
+    {
+      "id": 2,
+      "name": "Café de la Menoua",
+      "artisan": "Coopérative Bafoussam",
+      "price": 3200,
+      "priceLabel": "3 200 FCFA",
+      "emoji": "☕",
+      "category": "Café",
+      "description": "Café d'altitude de la région de la Menoua, torréfié artisanalement.",
+      "inStock": true
+    },
+    {
+      "id": 3,
+      "name": "Poivre de Penja Blanc",
+      "artisan": "Ndongo Épices",
+      "price": 2800,
+      "priceLabel": "2 800 FCFA",
+      "emoji": "🌶️",
+      "category": "Épices",
+      "description": "Poivre blanc IGP de Penja, reconnu pour sa qualité exceptionnelle.",
+      "inStock": true
+    },
+    {
+      "id": 4,
+      "name": "Tissu Rapha Bamiléké",
+      "artisan": "Artisanat Foulmban",
+      "price": 12000,
+      "priceLabel": "12 000 FCFA",
+      "emoji": "🧣",
+      "category": "Artisanat",
+      "description": "Tissu traditionnel Rapha tissé à la main par les artisans Bamilékés.",
+      "inStock": false
+    }
+  ],
+  "users": [
+      {
+        "id": 1,
+        "name": "Stephane",
+        "email": "stephane@gmail.com",
+        "password": "1234",
+        "role": "client"
+      },
+      {
+        "id": 2,
+        "name": "Ilary",
+        "email": "ilary@gmail.com",
+        "password": "1234",
+        "role": "artisan"
+      }
+    ],
+  "orders": [
+    {
+      "id": 1,
+      "products": [
+        {
+          "productId": 1,
+          "quantity": 2,
+          "variant": "Grand"
+        },
+        {
+          "productId": 2,
+          "quantity": 1,
+          "variant": null
+        }
+      ],
+      "totalPrice": 12200,
+      "payment_status": "PAID",
+      "order_status": "CONFIRMED",
+      "client": 1,
+      "createdAt": "2024-01-15T10:30:00.000Z",
+      "updatedAt": "2024-01-15T10:30:00.000Z"
+    }
+  ]
+}
