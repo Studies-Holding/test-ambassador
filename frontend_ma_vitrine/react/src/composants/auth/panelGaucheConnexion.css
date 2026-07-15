@@ -1,0 +1,36 @@
+.login-left{
+    background-image:url("../../images/montagne.jpg");
+    background-size:cover;
+    background-position:center;
+}
+
+.login-overlay{
+    background:rgba(25,135,84,.70);
+}
+
+.logo-circle{
+    width:45px;
+    height:45px;
+    background:white;
+    color:#198754;
+}
+
+.dot-green{
+    width:40px;
+    height:8px;
+    border-radius:999px;
+    background:#198754;
+}
+.dot-red{
+    width:40px;
+    height:8px;
+    border-radius:999px;
+    background:#c40c0c;
+}
+.dot-yellow{
+    width:40px;
+    height:8px;
+    border-radius:999px;
+    background:#dceb0d;
+}
+
