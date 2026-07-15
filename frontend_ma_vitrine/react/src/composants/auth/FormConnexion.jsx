@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import PasswordInput from "./PasswordInput";
 import { login } from "../../services/serviceAuthenti";
+import { Link } from "react-router-dom";
 
 
 function FormConnexion() {
@@ -19,34 +20,19 @@ function FormConnexion() {
         };
         try {
             const connectedUser = await login(user);
+            localStorage.setItem("token", connectedUser.token);
+            localStorage.setItem("role", connectedUser.role);
 
-            if (connectedUser) {
+            if (connectedUser.role === "CLIENT") {
+                navigate("/dashboard");
 
-                localStorage.setItem(
-                "currentUser",
-                JSON.stringify(connectedUser)
-                );
-
-                if(connectedUser.role === "client") {
-                
-                    setMessage("Connexion reussie :)")
-                    navigate("/dashboard");
-
-                } else if(connectedUser.role === "artisan") {
-
-                    setMessage("Connexion reussie :)")
-                    navigate("/dashboardArtisan");
-
-                } 
-            }
-            else {
-                    setMessage("Connexion echouée :(")
-                }
-
+            } else if(connectedUser.role === "ARTISAN") {
+                navigate("/dashboardArtisan");
+            } 
         }catch (error) {
-            console.error(error.message);
+            setMessage(error.message);
         }
-     }
+     };
     return (
         <div className="col-lg-6 d-flex align-items-center justify-content-center vh-100">
             <div className="w-75">
@@ -110,12 +96,7 @@ function FormConnexion() {
                 {/* Footer */}
                 <p className="text-center mt-5">
                     Pas encore de compte ?
-                    <a
-                        href="#"
-                        className="text-success fw-bold text-decoration-none ms-2"
-                    >
-                        S'inscrire
-                    </a>
+                      <Link to="/inscription" className=" btn btn-outline-success fw-bold ms-1">S'inscrire</Link>
                 </p>
             </div>
         </div>
