@@ -1,4 +1,4 @@
-import "./PanelGaucheConnexion.css";
+import "./panelGaucheConnexion.css";
 
 function PanelGaucheConnexion() {
     return (
