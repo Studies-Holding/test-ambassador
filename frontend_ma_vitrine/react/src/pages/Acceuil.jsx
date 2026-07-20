@@ -9,7 +9,12 @@ function Acceuil() {
 
     return (
         <>
-            <Navbar />
+            <Navbar
+                showSearch={false}
+                showNavigation={true}
+                showCart={false}
+                showExplorer={true}
+            />
             <Hero />
             <Features />
             <FeatureProduits />
