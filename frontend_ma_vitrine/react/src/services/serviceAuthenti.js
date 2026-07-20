@@ -34,6 +34,12 @@ export async function login(user) {
     return data;
 }
 
+export async function logout() {
+
+    localStorage.removeItem("token");
+    localStorage.removeItem("role");
+}
+
 export async function getMe() {
 
     const token = localStorage.getItem("token");
