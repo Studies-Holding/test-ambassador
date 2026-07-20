@@ -17,7 +17,7 @@ function HeroDashboard() {
     }, []);
 
     return (
-        <div className="bg-success text-white rounded-4 p-5 mb-4">
+        <div className="bg-success text-white rounded-4 p-5 mt-5 mb-4">
             <h1 className="fw-bold">
                 Bonjour {user ? user.name : "..."} 👋
             </h1>
