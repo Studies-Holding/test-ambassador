@@ -1,4 +1,4 @@
-
+import "./Features.css";
 
 function Features() {
 
@@ -52,7 +52,7 @@ function Features() {
                             <div className="card border-0 shadow-sm h-100 text-center">
                                 <div className="card-body d-flex flex-column align-items-center">
                                     {/*Icone bootstrap*/}
-                                    <div className="bg-success rounded-circle p-3 mb-3">
+                                    <div className="circle-icon bg-success rounded-circle d-flex justify-content-center align-items-center">
                                         <i className={`bi ${feature.icon}`} />
                                     </div>
                                     {/*Titre*/}
