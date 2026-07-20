@@ -1,2 +1,2 @@
-const API_URL = "https://test-ambassador.onrender.com";
+const API_URL = "http://localhost:5000";
 export default API_URL;

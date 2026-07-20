@@ -41,7 +41,6 @@ exports.signUp = async (req, res) => {
             message: 'Utilisateur créé avec succès', 
             user: {
                 id: user._id,
-                name: user.name,
                 email: user.email,
             }
         });
