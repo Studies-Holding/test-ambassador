@@ -1,0 +1,28 @@
+.search-input {
+    width: 350px;
+    transition: 0.3s;
+}
+
+.search-input:focus {
+    width: 400px;
+}
+
+.user-avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #198754;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo-icon {
+    font-size: 1.2rem;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
