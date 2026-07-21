@@ -5,6 +5,8 @@ import PageInscription from "./pages/PageInscription"
 import PageConnexion from "./pages/PageConnexion";
 import DashboardClient from "./pages/DashboardClient";
 import DashboardArtisan from "./pages/DashboardArtisan";
+import PageProduit from "./pages/PageProduits";
+import PageBlogs from "./pages/PageBlogs";
 
 function App() {
   
@@ -21,6 +23,10 @@ function App() {
       <Route path="/dashboard" element={<DashboardClient />} />
 
       <Route path="/dashboardArtisan" element={<DashboardArtisan />} />
+
+      <Route path="/produits" element={<PageProduit />} />
+
+      <Route path="/blogs" element={<PageBlogs />} />
 
     </Routes>
       
