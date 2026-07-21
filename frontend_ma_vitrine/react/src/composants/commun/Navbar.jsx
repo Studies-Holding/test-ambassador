@@ -60,13 +60,13 @@ function Navbar({
                         showNavigation && (
                             <ul className="navbar-nav mx-auto align-items-center">
                                 <li className="nav-item">
-                                    <a href="#" className="nav-link fw-medium text-secondary">Produits</a>
+                                    <Link to="/produits" className="nav-link fw-medium text-secondary">Produits</Link>
                                 </li>
                                 <li className="nav-item">
                                     <a href="#" className="nav-link fw-medium text-secondary">Artisans</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="#" className="nav-link fw-medium text-secondary">À propos</a>
+                                    <Link to="/blogs" href="#" className="nav-link fw-medium text-secondary">Blogs</Link>
                                 </li>
                             </ul>
                         )
