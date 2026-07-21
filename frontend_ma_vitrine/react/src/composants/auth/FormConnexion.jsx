@@ -37,10 +37,7 @@ function FormConnexion() {
         <div className="col-lg-6 d-flex align-items-center justify-content-center vh-100">
             <div className="w-75">
                 {/* Retour */}
-                <a
-                    href="/"
-                    className="text-decoration-none text-muted small"
-                >
+                <a href="/" className="text-decoration-none text-muted small">
                     <i className="bi bi-chevron-left me-1"></i>
                     Retour à l'accueil
                 </a>
