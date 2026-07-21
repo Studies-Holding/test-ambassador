@@ -30,16 +30,15 @@ const productSchema = new mongoose.Schema({
         default:'PENDING'
     },
    artisan: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'User',
-    required: true
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'User',
+        required: true
 },
 images:[
     {
         type:String
     }
-],
-
+]
 },
 {
     timestamps:true

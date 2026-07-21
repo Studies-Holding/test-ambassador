@@ -9,7 +9,7 @@ const authRoutes = require('./routes/authRoutes.js')
 const app = express();
 
 
-mongoose.connect('mongodb+srv://ILARY-D:Dayna2006@cluster0.1rxdwzm.mongodb.net/?appName=Cluster0')
+mongoose.connect('mongodb+srv://ILARY-D:Dayna2006@cluster0.1rxdwzm.mongodb.net/ma_vitrine?retryWrites=true&w=majority&appName=Cluster0')
 .then(() => {
     console.log('Connexion à MongoDB réussie');
 })
